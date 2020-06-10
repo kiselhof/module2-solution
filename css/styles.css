@@ -1,0 +1,71 @@
+html{
+	box-sizing: border-box;
+}
+h1{
+	text-align: center;
+	font-size: 1.75em;
+}
+section{
+	background-color: #82b74b; /*light green*/
+	margin: 10px;
+	border: 1px solid black;
+	font-family: Helvetica;
+	color: black;
+	overflow: auto;
+	position: relative;
+	box-sizing: border-box;
+}
+
+h3{
+	position: absolute;
+	background-color: #405d27; /*dark green*/
+	border: 1px black;
+	margin-top: 0;
+	margin-bottom: 0;
+	border-top: 0;
+	border-right: 0;
+	text-align: center;
+	font-size: 1.25em;
+	top: 0px;
+	right: 0px;
+	width: 250px;
+}
+
+p{
+	padding: 25px;
+	margin: 0;
+}
+
+.row{
+	width: 100%;
+}
+
+/********** Large devices **********/
+@media (min-width: 992px){
+	.col-lg-4{
+		float: left;
+		width: 31%;
+	}
+}
+
+/********** Medium devices **********/
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6, .col-md-12 {
+		float: left;
+	}
+	.col-md-6{
+		width: 45%;
+	}
+	.col-md-12{
+		width: 98%;
+		margin-right: 15px; 
+	}
+}
+
+/********** Small devices **********/
+@media (max-width: 767px){
+	.col-sm-12{
+		float: left;
+		width: 95%
+	}
+}
